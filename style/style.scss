@@ -1,0 +1,135 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  //   border: 1px solid black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+$font-color-primary: black;
+
+body {
+  display: block;
+}
+p {
+  font-size: 13px;
+  padding-bottom: 10px;
+  line-height: 22px;
+  text-align: justify;
+}
+
+nav.page-navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 30px;
+  .logo-type {
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    margin-left: 5%;
+    width: 100%;
+    min-height: 60px;
+    max-width: 130px;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    li {
+      margin-right: 10px;
+      :hover {
+        border-top: 2px solid orangered;
+      }
+      a {
+        text-decoration: none;
+        color: $font-color-primary;
+      }
+    }
+  }
+}
+
+section {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+section#home {
+  background-image: url("../img/header-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 950px;
+
+  .container-item {
+    margin-left: 10%;
+    max-width: 30%;
+  }
+  h1 {
+    font-weight: bold;
+    font-size: 40px;
+  }
+}
+section#about-us {
+  background-color: rgba(0, 128, 128, 0.788);
+  flex-flow: row-reverse nowrap;
+  height: 950px;
+  color: #fff;
+  .container-item {
+    max-width: 30%;
+    margin-left: 10%;
+  }
+  img {
+    width: 100%;
+  }
+  h1 {
+    font-size: 45px;
+  }
+}
+
+section#our-services {
+  height: 800px;
+  background-color: lightskyblue;
+  background-image: url(../img/services-background.png);
+  background-repeat: no-repeat;
+  background-position: 75%;
+  padding: 0 10% 0 10%;
+  .container-item {
+    width: 100%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  .container-item-item {
+    width: 70%;
+    height: 100px;
+    margin-bottom: 15px;
+    padding: 20px 30px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid rgba($color: #161616, $alpha: 0.3);
+    box-shadow: -3px 3px rgba($color: #161616, $alpha: 0.3);
+    cursor: pointer;
+    :active {
+    }
+  }
+  .services--icon {
+    display: inline;
+    min-width: 55px;
+    width: 30%;
+    height: 55px;
+    border-left: 1px solid black;
+    background-repeat: no-repeat;
+    // position: absolute;
+  }
+}
+
+button {
+  height: 40px;
+  width: 200px;
+  box-shadow: 2px 2px rgba($color: #161616, $alpha: 0.3);
+}
+.getFree-orange {
+  border: 1px solid orangered;
+  background-color: orangered;
+  color: white;
+}
