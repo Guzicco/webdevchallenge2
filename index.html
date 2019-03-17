@@ -23,34 +23,38 @@
         <li><a href="#contact">CONTACT</a></li>
       </ul>
     </nav>
-    <heading class="container home container--background--image justifycontent--left" id="home" style="background-image: url(./img/header-background.png)">
+    <header class="container home container--background--image justifycontent--left" id="home" style="background-image: url(./img/header-background.png)">
       <div class="container-item">
-        <h1 class="font-style">
+        <h1>
           Fresh Life
         </h1>
-        <p class="article font-style">
+        <p class="text-align-justify">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam ut
           doloribus at veniam quam ratione beatae voluptatem a maxime! Dolores,
           laboriosam sequi! Id mollitia praesentium magnam harum, ratione animi
           unde!
         </p>
-        <button class="button--submit--orange">GET FREE NOW</button>
+        <!-- block -->
+        <!-- block-something__element-something-else -->
+        <!-- block__element--modification -->
+        <!-- block -->
+        <button class="button-submit--orange">GET FREE NOW</button>
         <!-- klasa powina mówić co robi a nie gdzie występuje. button--orange-->
       </div>
-    </heading>
-    <section class="container about-us direction--row--reverse" id="about-us">
+    </header>
+    <section class="container about-us direction--row--reverse row--reversed" id="about-us">
       <div class="container-item">
-        <h1 class="font-style">
+        <h1>
           About Us
         </h1>
-        <p>
+        <p class="text-align-justify">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quo
           ipsa distinctio necessitatibus sed placeat, qui assumenda quod vero
           dolor id officiis quis temporibus nulla aspernatur. Dolorem at
           praesentium qui. Lorem ipsum dolor sit amet consectetur adipisicing
           elit.
         </p>
-        <p>
+        <p class="text-align-justify">
           Voluptate molestiae iusto rerum asperiores ab quia reprehenderit
           ipsum! Ducimus deleniti, temporibus beatae ratione cum architecto,
           neque rem velit quo, blanditiis ullam?
@@ -69,52 +73,57 @@
         </h1>
       </div>
         <div class="container-item ">
-        <button class="action--button">
-          <span class="button--text">
-            Online Shopping
-          </span>
-          <span class="container--background--image button--img" style="background-image: url(./img/icon-cart.png)"></span>
+          <button class="action--button">
+                Online Shopping
+          <div class="container--background--image button--img" style="background-image: url(./img/icon-cart.png)"></div>
         </button>
         <button class="action--button">
-          <span class="button--text">
             Quality Product
-          </span>
-          <span class="container--background--image button--img" style="background-image: url(./img/icon-product.png)"></span>
+          <div class="container--background--image button--img" style="background-image: url(./img/icon-product.png)"></div>
         </button>
         <button class="action--button">
-          <span class="button--text">
           Domestic & International Delivery
-          </span>
-          <span class="container--background--image button--img" style="background-image: url(./img/icon-delivery.png)"></span>
+          <div class="container--background--image button--img" style="background-image: url(./img/icon-delivery.png)"></div>
         </button>
         <button class="action--button">
-          <span class="button--text">
             Well Organized
-          </span>
-          <span class="container--background--image button--img" style="background-image: url(./img/icon-carrot.png)"> </span>
+          <div class="container--background--image button--img" style="background-image: url(./img/icon-carrot.png)"> </div>
         </button>  
       </div>
     </section>
     <section class="container gallery direction--column" id="gallery">
-      <h1 class="font-style">
+      <h1>
         Gallery
       </h1>
       <div class="container-item">
-        <p class="article font-style">
+        <p class="article">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           Hic tempora laboriosam at in voluptates atque vero provident blanditiis 
           sed doloribus veniam laudantium, odio voluptatibus aut, 
           praesentium id molestias nisi est.
         </p>
       </div>
-      <div class="photo-container container-item">
-        <img src="./img/gallery1-peach.png" alt="peach"/>
-        <img src="./img/gallery2-blackberry.png" alt="blackberry"/>
-        <img src="./img/gallery3-cranberry.png" alt="cranberry"/>
-        <img src="./img/gallery4-shake.png" alt="shake"/>
-        <img src="./img/gallery5-tomato.png" alt="tomato"/>
+      <div class="container-item gallery-container">
+        <div class="photo-container">
+          <img src="./img/gallery1-peach.png" alt="peach"/>
+        </div>
+        <div class="photo-container">
+          <img src="./img/gallery2-blackberry.png" alt="blackberry"/>
+        </div>
+        <div class="photo-container">
+            <img src="./img/gallery3-cranberry.png" alt="cranberry"/>
+        </div>
+        <div class="photo-container">
+          <img src="./img/gallery4-shake.png" alt="shake"/>
+        </div>
+        <div class="photo-container">
+          <img src="./img/gallery5-tomato.png" alt="tomato"/>
+        </div>
       </div>
       <button class="button--expand--blue">
+        <!-- button--primary -->
+        <!-- button--error -->
+        <!-- button--success -->
         VIEW MORE
       </button>
     </section>
@@ -123,7 +132,7 @@
         <h1>
           Subscribe To Us
         </h1>
-        <p>
+        <p class="text-align-justify">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
           praesentium harum laudantium delectus, enim corporis aliquid facilis
           ea, non et perferendis totam assumenda molestias atque itaque quas
@@ -146,30 +155,42 @@
         eaque harum?
       </p>
       <ul class="container-item post-container">
-        <li class="post">
-          <a href="" style="background-image: url()">
-            <div class="post-item-date"></div>
-            <div class="post-item-introduction"></div>
-            <div class="post-item-footer">
-              <span></span>
+        <li class="post" style="background-image: url(./img/blog-1.png)">
+          <a href=""  >
+            <div class="post-item-date">
+              20 NOV
+            </div>
+            <div class="post-item-introduction">
+              Green Smoothies: Too Much of a Good Thing?
+            <p class="post-item-footer">
+              By Guzicco - 2 hours ago
+            </p>
             </div>
           </a>
         </li>
-        <li class="post">
-          <a href="" style="background-image: url()">
-            <div class="post-item-date"></div>
-            <div class="post-item-introduction"></div>
-            <div class="post-item-footer">
-              <span></span>
+        <li class="post" style="background-image: url(./img/blog-2.png)">
+          <a href="">
+            <div class="post-item-date">
+              14 NOV
+            </div>
+            <div class="post-item-introduction">
+              Growing Food and a "Thirst" for Innovation
+            <p class="post-item-footer">
+              By Guzicco - 3 hours ago
+            </p>
             </div>
           </a>
         </li>
-        <li class="post">
-          <a href="" style="background-image: url()">
-            <div class="post-item-date"></div>
-            <div class="post-item-introduction"></div>
-            <div class="post-item-footer">
-              <span></span>
+        <li class="post" style="background-image: url(./img/blog-3.png)">
+          <a href="">
+            <div class="post-item-date">
+              10 NOV
+            </div>
+            <div class="post-item-introduction">
+              Pesticides & Food: What You Need to Know
+            <p class="post-item-footer">
+              By Guzicco - 6 hours ago
+            </p>
             </div>
           </a>
         </li>
@@ -179,24 +200,24 @@
       </button>
     </section>
     <section class="container contact direction--column container--background--image" id="contact" style="background-image: url(./img/contact-bg.jpg)">
-        <h1>
-          Contact
-        </h1>
+      <h1>
+        Contact
+      </h1>
       <p class="container-item">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. At, eligendi
         natus necessitatibus omnis quae autem corporis cum mollitia fugiat a quo
         est dolore voluptatum dolorem deleniti maxime vero nam ut.
       </p>
-      <div class="container container--nomargin">
+      <div class="container container--no-margin">
         <div class="container-item container--contactform">
-          <form class="container-item container--contactform--input" id="contact--form">
-            <input type="text" placeholder="Name Surname" id="username--contactform"/>
-            <input type="email" placeholder="Your email" id="useremail--contactform" />
-            <input type="tel" placeholder="Your phone number" id="userphone--contactform" />
+          <form class="container-item container--contactform--input" id="contact-form">
+            <input type="text" placeholder="Name Surname" id="user-name-contact-form"/>
+            <input type="email" placeholder="Your email" id="usermail-contact-form" />
+            <input type="tel" placeholder="Your phone number" id="userphone-contact-form" />
             <textarea id="usermessage" placeholder="Your message"></textarea>
           </form>
         </div>
-        <div class="container-item alignself--start">
+        <div class="container-item container-item--left-aligned alignself--start">
             <h2>ADDRESS</h2>
             <h3>123 City Name, Street, Country</h3>
             <h2>EMAIL</h2>

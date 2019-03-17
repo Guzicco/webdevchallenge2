@@ -3,7 +3,7 @@
 ::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Raleway", sans-serif;
 }
 
 body {
@@ -12,7 +12,7 @@ body {
 }
 
 h1 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 40px;
 }
 
@@ -20,11 +20,16 @@ p {
   font-size: 14px;
   padding-bottom: 10px;
   line-height: 22px;
+  text-align: center;
+}
+
+.text-align-justify {
   text-align: justify;
 }
 
 nav.page-navbar {
   position: fixed;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -32,9 +37,11 @@ nav.page-navbar {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 10px 30px;
+  z-index: 9999;
 }
 
 nav.page-navbar .navbar--logo {
+  padding: 26px 65px;
   background-repeat: no-repeat;
   margin-left: 5%;
 }
@@ -58,7 +65,8 @@ nav.page-navbar ul li {
 }
 
 nav.page-navbar ul li :hover {
-  border-top: 2px solid orangered;
+  padding-top: 5px;
+  border-top: 3px solid orangered;
 }
 
 nav.page-navbar ul li a {
@@ -66,9 +74,17 @@ nav.page-navbar ul li a {
   color: black;
 }
 
+nav.page-navbar ul li:last-child {
+  margin-right: 100px;
+}
+
 input[type="email"] {
   width: 100%;
   padding: 10px;
+}
+
+.home {
+  height: 950px;
 }
 
 .container {
@@ -89,30 +105,104 @@ input[type="email"] {
   padding-bottom: 20px;
 }
 
-.container .action--button {
-  display: block;
-  margin: 20px;
-  width: 80%;
-  height: 25%;
+.container--reversed {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-flow: row-reverse nowrap;
+          flex-flow: row-reverse nowrap;
 }
 
-.container .action--button .button--text {
-  text-align: center;
-  padding: 20px 10px;
+.container .action--button {
+  margin: 20px;
+  padding: 0;
+  width: 70%;
+  height: 25%;
+  background-color: white;
+  color: black;
+  line-height: 50px;
 }
 
 .container .action--button .button--img {
+  margin: 10px;
   padding: 20px;
+  background-size: contain;
   float: right;
-  border-left: 1px solid #b3b3b3;
 }
 
-.container .photo-container {
-  width: 80%;
-  max-width: 90%;
+.container .gallery-container {
+  margin: 0 10% 0 10%;
+  width: auto;
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container .gallery-container .photo-container {
+  margin-bottom: 20px;
+}
+
+.container ul.post-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  max-width: 100%;
+}
+
+.container ul.post-container li.post {
+  height: 310px;
+  width: 370px;
+  margin-left: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container ul.post-container li.post a {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-decoration: none;
+  color: white;
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(black));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, black 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 );
+  /* IE6-9 */
+}
+
+.container ul.post-container li.post a .post-item-date {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  background-color: rgba(16, 16, 16, 0.3);
+}
+
+.container ul.post-container li.post a .post-item-introduction {
+  padding-left: 10px;
+}
+
+.container ul.post-container li.post a .post-item-footer {
+  font-size: 12px;
 }
 
 .container .container--contactform {
@@ -169,7 +259,7 @@ input[type="email"] {
           flex-flow: column nowrap;
 }
 
-.container--nomargin {
+.container--no-margin {
   margin: 0;
   padding: 0;
 }
@@ -255,7 +345,7 @@ button {
   color: white;
 }
 
-.button--submit--orange {
+.button-submit--orange {
   border: 1px solid orangered;
   background-color: orangered;
 }
